@@ -4,8 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="styles/styles.css">
+
 </head>
-<body>
+<body class="min-h-screen sm:w-auto">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 font-raleway">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-raleway font-medium">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold text-[#030712]">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-raleway font-medium text-[#030712B3]">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                    
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="btn border-[#1DD100] bg-[#1DD1001A]">
+                        <a class="text-[#1DD100]">Bus</a>
+                        <img src="images/bus-icon.png" alt="">
     
+                    </div>
+                  
+                </div>
+              </div>
+        </nav>
+
+        <section class="hero min-h-screen">
+              <div class="hero min-h-screen" style="background-image: url(images/banner.png) ;">
+                <div class="hero-content text-center">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl text-white font-raleway font-extrabold">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span> </h1>
+                    <p class="py-6 font-inter text-white font-normal">Tickets are available on the go through our platform, no more queues! Promise of convenient travel.</p>
+                    <button class="btn bg-[#1DD100] border-none text-[#030712]">Buy Tickets</button>
+                  </div>
+                <!---- <div class="booking-container">
+                    <div  class="w-[308px] h-[138px] bg-white rounded-xl">
+                        <div class=" justify-between items-center">
+                            <div>
+                                <img src="images/people.png" alt="">
+                            </div>
+                            <h1 class="font-inter font-bold">500K+</h1>
+                            <p class="font-inter font-medium">Registered users</p>
+    
+                        </div>
+
+                    </div>
+                    
+
+                  </div> -->
+                </div>
+              </div>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section>
+            <div class="pt-32 text-center">
+                <h1 class="font-raleway text-[#030712] text-4xl font-bold">Best offers for you</h1>
+
+            </div>
+            <div class="flex sm:flex-col-2 justify-center gap-5 mt-12 items-center lg:flex-row-2">
+                <div class="container bg-[#FFBF0F] text-black flex justify-center items-center gap-20 w-[573px] h-[220px] rounded-2xl relative">
+                    <div class="coupon-card">
+                        <h1 class="font-inter text-5xl font-extrabold">15% OFF</h1>
+                        <h4 class="font-inter text-xl font-semibold">on your next purchase</h4>
+                        <p class="font-inter text-[#03071280] text-lg font-medium">use by January 2024</p>
+                    </div>
+                    <div class="coupon-row ">
+                        <h1 class="font-raleway text-3xl font-bold">NEW15</h1>
+                        <h2 class="font-raleway text-xl font-medium text-[#03071266]">Coupon Code</h2>
+                    </div>
+                    <!--<div class="circle bg-white w-[50px] h-[50px] rounded-full absolute top-0.5 translate-y-1/2">
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+    
+                    </div> -->
+                    
+                
+    
+                </div>
+                <div class="container bg-[#F78C9C] text-black flex justify-center items-center gap-20 w-[573px] h-[220px] rounded-2xl">
+                    <div class="coupon-card">
+                        <h1 class="font-inter text-5xl font-extrabold">20% OFF</h1>
+                        <h4 class="font-inter text-xl font-semibold">on your next purchase</h4>
+                        <p class="font-inter text-[#03071280] text-lg font-medium">use by January 2024</p>
+                    </div>
+                    
+                    <div class="coupon-row ">
+                        <h1 class="font-raleway text-3xl font-bold">Couple 20</h1>
+                        <h2 class="font-raleway text-xl font-medium text-[#03071266]">Coupon Code</h2>
+                    </div>
+                   <!-- <div class="bg-white w-[50px] h-[50px] rounded-full absolute top-0.5 translate-y-1/2">
+                        <div class="circle1 top-[-25px]"></div>
+                        <div class="circle2 bottom-[-25px]" ></div>
+    
+                    </div> -->
+                    
+                
+    
+                </div>
+                
+                   
+
+            </div>
+            <div class="mt-12 text-center justify-center items-center ">
+                <button class="btn bg-none border-[#1DD100] text-[#1DD100] text-xl font-bold font-raleway">See All Offers</button>
+            </div>
+           
+           
+        </section>
+
+
+        <section>
+            <div class="mt-28 text-center">
+                <h1 class="text-4xl font-bold font-raleway">P.H Paribahan</h1>
+                <p class="pt-6 text-[#03071299]">Looking for great deals on bus tickets? We'll make it Shohoz for you! Get the lowest prices, and renowned bus operators - all in one place.</p>
+            </div>
+
+            <div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+    
+
+
+
+
 </body>
 </html>
