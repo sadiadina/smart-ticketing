@@ -10,7 +10,7 @@
 
 </head>
 <body class="min-h-screen sm:w-auto">
-    <header>
+    <header id="home-screen">
       <!--navbar section-->
         <nav>
             <div class="navbar bg-base-100 font-raleway">
@@ -38,7 +38,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                    <div class="btn border-[#1DD100] bg-[#1DD1001A]">
+                    <div id="bus-btn" class="btn border-[#1DD100] bg-[#1DD1001A]">
                         <a class="text-[#1DD100]">Bus</a>
                         <img src="images/bus-icon.png" alt="">
     
@@ -51,22 +51,94 @@
         <section class="hero min-h-screen">
               <div class="hero min-h-screen" style="background-image: url(images/banner.png) ;">
                 <div class="hero-content text-center">
-                  <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl text-white font-raleway font-extrabold">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span> </h1>
+                  <div class="max-w-md m-auto">
+                    <h1 class="mb-5 text-5xl text-white font-raleway font-extrabold ">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span> </h1>
                     <p class="py-6 font-inter text-white font-normal">Tickets are available on the go through our platform, no more queues! Promise of convenient travel.</p>
-                    <button class="btn bg-[#1DD100] border-none text-[#030712]">Buy Tickets</button>
+                    <button  id="buy-tickets-button" class="btn bg-[#1DD100] border-none text-[#030712]">Buy Tickets</button>
                   </div>
         
                 </div>
               </div>
+              <!--card part-->
+            
 
         </section>
+        <!--badge card-->
+        <div class="flex justify-center gap-6 -mt-24">
+              <!--1st card-->
+              <div>
+                <div class="card w-96  bg-base-100 shadow-md shadow-[#1DD100]">
+                  <div class="card-body ">
+                    <div class="flex h-[138px] justify-center items-center gap-8">
+                      <div>
+                        <img class="w-fit" src="images/people.png" alt="">
+  
+                      </div>
+                      
+                      <div>
+                        <h2 class="card-title font-inter  text-4xl font-bold text-[#030712] ">500K+</h2>
+                        <p class=" font-inter font-normal text-[#03071299]">Registered users</p>
+                      </div>
+                      
+                    </div>
+                    
+                
+                  </div>
+                </div>
+
+              </div>
+              <!--2nd card-->
+              <div>
+                <div class="card w-96  bg-base-100 shadow-md shadow-[#1DD100]">
+                  <div class="card-body ">
+                    <div class="flex h-[138px] justify-center items-center gap-8">
+                      <div>
+                        <img class="w-fit" src="images/ticket-cupon.png" alt="">
+  
+                      </div>
+                      
+                      <div>
+                        <h2 class="card-title font-inter  text-4xl font-bold text-[#030712] ">1.7 lacks</h2>
+                        <p class=" font-inter font-normal text-[#03071299]">Tickets sold</p>
+                      </div>
+                      
+                    </div>
+                    
+                
+                  </div>
+                </div>
+
+              </div>
+
+              <!--3rd card-->
+              <div>
+                <div class="card w-96  bg-base-100 shadow-md shadow-[#1DD100]">
+                  <div class="card-body ">
+                    <div class="flex h-[138px] justify-center items-center gap-8">
+                      <div>
+                        <img class="w-fit" src="images/stoppage.png" alt="">
+  
+                      </div>
+                      
+                      <div>
+                        <h2 class="card-title font-inter  text-4xl font-bold text-[#030712] ">80K+</h2>
+                        <p class=" font-inter font-normal text-[#03071299]">Rental partners</p>
+                      </div>
+                      
+                    </div>
+                    
+                
+                  </div>
+                </div>
+
+              </div>
+
 
     </header>
 
     <main>
       <!--best offer section-->
-        <section>
+        <section id="best-offer ">
             <div class="pt-12 text-center">
                 <h1 class="font-raleway text-[#030712] text-4xl font-bold">Best offers for you</h1>
 
@@ -118,7 +190,7 @@
 
     <!--P.H.Paribahan section-->
 
-    <section class="min-h-screen pt-12 bg-[#F7F8F8] rounded-xl">
+    <section id="paribahan-name" class="min-h-screen pt-12 bg-[#F7F8F8] rounded-xl">
             <div class="text-center">
                 <h1 class="text-4xl font-bold font-raleway">P.H Paribahan</h1>
                 <p class="pt-6 text-[#03071299]">Looking for great deals on bus tickets? We'll make it Shohoz for you! Get the lowest prices, and renowned bus operators - all in one place.</p>
@@ -131,7 +203,7 @@
                   <!--heading part-->
                     <div class="flex justify-between mt-8 mb-4 items-center">
                 
-                     <div class="flex items-center gap-4">
+                     <div id="bus-name" class="flex items-center gap-4">
                                 <img src="images/bus-logo.png" alt="">
                         <div>
                              <h1 class="font-raleway text-3xl font-bold">Greenline Paribahan</h1>
@@ -143,7 +215,7 @@
 
                           <div class="btn border-none bg-[#1DD10026]">
                             <img src="images/seat-green.png" alt="">
-                            <a class="text-[#1DD100]">40 Seats left</a>        
+                            <a id="current-seat" class="text-[#1DD100]">40 Seats left</a>        
                           </div>
                    
                     </div>
@@ -218,7 +290,7 @@
     
 
     <!--ticket section-->
-    <div class=" min-h-screen pt-24 bg-[#F7F8F8] ">
+    <div class=" pt-24 bg-[#F7F8F8] pb-8 ">
       <div class="max-w-[1170px] pt-8 m-auto bg-white rounded-2xl flex divide-x-2 divide-dashed">
 
       
@@ -249,9 +321,9 @@
         </div>
 
         <!--main seat plan-->
-        <div class="flex justify-between">
-          <!--fisrt section-->
-          <div class="flex">
+        <div id="seat-container" class="flex justify-between">
+          <!--first section-->
+          <div  class="flex">
             <!--col-1-->
             <div>
               <div class="pb-6">
@@ -288,35 +360,37 @@
               
 
             </div>
+            
             <!--col-2-->
             <div class="pl-6 flex flex-col ">
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A1</kbd>
+              <kbd  id="seat-A1" onclick="bookSeat('A1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A1</kbd>
             </div>
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B1</kbd>
+              <kbd id="seat-B1" onclick="bookSeat('B1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B1</kbd>
             </div>
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C1</kbd>
+              <kbd id="seat-C1" onclick="bookSeat('C1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C1</kbd>
             </div>
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D1</kbd>
+              <kbd id="seat-D1" onclick="bookSeat('D1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D1</kbd>
             </div>
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E1</kbd>
+              <kbd id="seat-E1" onclick="bookSeat('E1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E1</kbd>
             </div>
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F1</kbd>
+              <kbd id="seat-F1" onclick="bookSeat('F1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F1</kbd>
             </div>
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G1</kbd>
+              <kbd id="seat-G1" onclick="bookSeat('G1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G1</kbd>
             </div>
-            <div class="pb-6"><kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H1</kbd></div>
+            <div  class="pb-6">
+              <kbd id="seat-H1" onclick="bookSeat('H1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H1</kbd></div>
             <div class="pb-6">
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I1</kbd>
+              <kbd id="seat-I1" onclick="bookSeat('I1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I1</kbd>
             </div>
             <div>
-              <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J1</kbd>
+              <kbd id="seat-J1" onclick="bookSeat('J1')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J1</kbd>
             </div>       
               
              
@@ -327,32 +401,33 @@
             <div class="pl-6 flex flex-col ">
 
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A2</kbd>
+                <kbd id="seat-A2" onclick="bookSeat('A2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A2</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B2</kbd>
+                <kbd id="seat-B2" onclick="bookSeat('B2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B2</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C2</kbd>
+                <kbd id="seat-C2" onclick="bookSeat('C2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C2</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D2</kbd>
+                <kbd id="seat-D2" onclick="bookSeat('D2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D2</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E2</kbd>
+                <kbd id="seat-E2" onclick="bookSeat('E2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E2</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F2</kbd>
+                <kbd id="seat-F2" onclick="bookSeat('F2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F2</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G2</kbd>
+                <kbd id="seat-G2" onclick="bookSeat('G2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G2</kbd>
               </div>
-              <div class="pb-6"><kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H1</kbd></div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I2</kbd>
+                <kbd id="seat-H2" onclick="bookSeat('H2')"  class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H2</kbd></div>
+              <div class="pb-6">
+                <kbd id="seat-I2" onclick="bookSeat('I2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I2</kbd>
               </div>
               <div>
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J2</kbd>
+                <kbd id="seat-J2" onclick="bookSeat('J2')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J2</kbd>
               </div>
             </div>
 
@@ -367,65 +442,68 @@
             <div class="pl-6 flex flex-col ">
 
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A3</kbd>
+                <kbd id="seat-A3" onclick="bookSeat('A3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A3</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B3</kbd>
+                <kbd id="seat-B3" onclick="bookSeat('B3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B3</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C3</kbd>
+                <kbd id="seat-C3" onclick="bookSeat('C3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C3</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D3</kbd>
+                <kbd id="seat-D3" onclick="bookSeat('D3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D3</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E3</kbd>
+                <kbd id="seat-E3" onclick="bookSeat('E3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E3</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F3</kbd>
+                <kbd id="seat-F3" onclick="bookSeat('F3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F3</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G3</kbd>
+                <kbd id="seat-G3" onclick="bookSeat('G3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G3</kbd>
               </div>
-              <div class="pb-6"><kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H3</kbd></div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I3</kbd>
+                <kbd id="seat-H3" onclick="bookSeat('H3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H3</kbd></div>
+              <div class="pb-6">
+                <kbd id="seat-I3" onclick="bookSeat('I3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I3</kbd>
               </div>
               <div>
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J3</kbd>
+                <kbd id="seat-J3" onclick="bookSeat('J3')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J3</kbd>
               </div>
             </div>
 
             <!--col-5-->
             <div class="pl-6 flex flex-col ">
 
+              
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A4</kbd>
+                <kbd id="seat-A4" onclick="bookSeat('A4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">A4</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B4</kbd>
+                <kbd id="seat-B4" onclick="bookSeat('B4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">B4</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C4</kbd>
+                <kbd id="seat-C4" onclick="bookSeat('C4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">C4</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D4</kbd>
+                <kbd id="seat-D4" onclick="bookSeat('D4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">D4</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E4</kbd>
+                <kbd id="seat-E4" onclick="bookSeat('E4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">E4</kbd>
               </div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F4</kbd>
+                <kbd id="seat-F4" onclick="bookSeat('F4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">F4</kbd>
               </div>
+              <div  class="pb-6">
+                <kbd id="seat-G4" onclick="bookSeat('G4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G4</kbd></div>
               <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">G4</kbd>
-              </div>
-              <div class="pb-6"><kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H4</kbd></div>
-              <div class="pb-6">
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I4</kbd>
+                <kbd id="seat-H4" onclick="bookSeat('H4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">H4</kbd>
               </div>
               <div>
-                <kbd class="kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J4</kbd>
+                <kbd id="seat-I4" onclick="bookSeat('I4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">I4</kbd>
+              </div>
+              <div class="pt-6">
+                <kbd id="seat-J4" onclick="bookSeat('J4')" class="button kbd border-none font-inter text-lg font-medium rounded-xl w-[110px] h-[56px] bg-[#F7F8F8] text-[#03071280]">J4</kbd>
               </div>
             </div>
 
@@ -447,58 +525,58 @@
 
         <!--Selected seat-->
         <div>
-          <div class="bg-[#F7F8F8] w-[433px] h-[335px] p-8 rounded-xl">
+          <div class="bg-[#F7F8F8] w-[433px]  p-8 rounded-xl">
             <div class="overflow-x-auto">
-              <table class="table">
+              <table id="selected-seats" class="table">
                 <!-- head -->
                 <thead>
                   <tr class="font-inter font-medium text-base text-[#030712]">
                     
-                    <th> Seat <span class="badge bg-[#1DD100] text-white">2</span></th>
+                    <th id="selectedSeats"> Seat <span id="seatBadge" class="badge bg-[#1DD100] text-white">0</span></th>
                     
                     <th>Class</th>
-                    <th class="flex justify-end">Price</th>
+                    <th id="seatPrice" class="flex justify-end">Price</th>
                   </tr>
                 </thead>
                 <tbody>
                   <!-- row 1 -->
                   <tr class="font-inter font-regular text-base text-[#03071299]">
                     
-                    <td>C2</td>
-                    <td>Economy</td>
-                    <td class="flex justify-end">550</td>
+                    <td></td>
+                    <td></td>
+                    <td class="flex justify-end"></td>
                   </tr>
                   <!-- row 2 -->
                   <tr class="font-inter font-regular text-base text-[#03071299]">
                    
-                    <td>C4</td>
-                    <td>Economy</td>
-                    <td class="flex justify-end">550</td>
+                    <td></td>
+                    <td></td>
+                    <td class="flex justify-end"></td>
                   </tr>
                   <!-- row 3 -->
                   
                   <tr class="font-inter font-bold text-base text-[#030712]">
-                    <td>Total Price</td>
+                    <td  id="totalPrice">Total Price</td>
                     <td></td>
-                    <td class="flex justify-end">1100</td>
+                    <td class="flex justify-end">0</td>
                   </tr>
                 </tbody>
               </table>
-              <label class="input input-bordered flex items-center h-[56px]">
-                <input type="text" class="grow" placeholder="Have any coupon?" />
-                <span class="btn bg-[#1DD100] text-white justify-end h-[40px]">Apply</span>
+              <label id="coupon-field" class="input input-bordered flex items-center h-[56px]">
+                <input type="text" id="couponCode" class="grow" placeholder="Have any coupon?" />
+                <span id="couponbtn" class="btn  bg-[#1DD100] text-white justify-end h-[40px]" onclick="applyCoupon()" >Apply</span>
               </label>
               
               <!--grand total-->
               <div class="overflow-x-auto">
-                <table class="table">
+                <table id="grand-total" class="table">
                   
                   <tbody>
                     <!-- row 1 -->
                     <tr class="font-inter font-bold text-base  text-[#030712]">
-                      <td>Grand Total</td>
+                      <td >Grand Total</td>
                       <td></td>
-                      <td class="flex justify-end">1100</td>
+                      <td id="grand-total-price" colspan="2" class="flex justify-end">0</td>
                     </tr>
                    
                   </tbody>
@@ -520,7 +598,7 @@
               <div class="label">
                 <span class="label-text font-inter text-base font-semibold mb-3">Phone Number*</span>
               </div>
-              <input type="text" placeholder="Enter your phone number" class="input input-bordered w-[433px] h-[64px] " />
+              <input type="text" id="phoneNumber" placeholder="Enter your phone number" class="input input-bordered w-[433px] h-[64px] " />
             
             </label>
             <label class="form-control">
@@ -533,9 +611,36 @@
             
             
            </div>
-           <div class="">
-              <button class="btn bg-[#1DD100] border-none font-raleway  text-xl font-extrabold text-white w-[433px] h-[64px]">Next</button>
-            </div>
+           
+
+            <!-- Open the modal using ID.showModal() method -->
+   <button id="nextButton" class="btn bg-[#1DD100] border-none font-raleway  text-xl font-extrabold text-white w-[433px] h-[64px" onclick="my_modal_1.showModal()">Next</button>
+   <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+    <div class=" m-auto">
+      <div class=" text-center justify-center px-10 pt-10 pl-44">
+        <img src="images/success.png" alt="">
+      </div>
+      <div class="card-body font-roboto items-center text-center">
+        <h2 class="card-title  text-2xl text-[#27AE60] font-bold mb-9">SUCCESS</h2>
+        <p><span class="text-xl font-medium text-[#4A4A4A]">Thank you for Booking Our Bus Seats. <br>
+          We are working hard to find the best service and deals for you.</span> <br>
+          <span class="text-xl font-light text-[#4A4A4A]">  Shortly you will find a confirmation in your email.</span>
+        </p>
+        <div class="card-actions mt-5">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn rounded-full text-white text-xl font-semibold bg-[#27AE60]">Continue</button>
+          </form>
+         
+        </div>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</dialog>
+            
             <!--terms & condition-->
             <div class=" flex justify-evenly items-center pt-6 text-[#03071299] font-inter font-medium text-base">
               <a href="">Terms and Conditions</a>
@@ -554,9 +659,14 @@
     </div>
   </section>
 
+  
     <!--ending-->
 
     </main>
+   
+
+
+</section> 
 
     <footer>
       <footer class="footer p-10  bg-[#030712]">
@@ -587,47 +697,13 @@
       </footer>
 
 
-
-
-
-
-
-
-      
-
-    
-
-     <!---- <section class="footer p-10 bg-[#030712] lg:h-[457px] ">
-        <aside>
-        <a class=" text-4xl font-extrabold text-white">P-Ticket</a>
-          <p class="text-lg font-normal font-inter text-[#ffffffCC]">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
-        </aside> 
-        <nav class="">
-          <h1 class="font-raleway text-xl text-white font-semibold">Download our app</h1>
-          <div class="grid grid-flow-col gap-4">
-            <img src="images/Group 104.png" alt="">
-            
-          </div>
-          
-        </nav>
-        <div>
-          <h3>@all rights reserved, P-Ticket services limited.2024</h3>
-          <h3>Terms & condition</h3>
-          <h3>Return & refund policy</h3>
-          <h3>Privacy policy</h3>
-        </div>
-        
-       
-      </section>
-    -->
-     
-
     </footer>
+
     
     
 
 
-
+<script src="script/smart.js"></script>
 
 </body>
 </html>
